@@ -16,7 +16,7 @@ function About() {
                       <h1>About</h1>
                     <h2>Personal Information</h2>
                 </Zoom>
-                <div className="col-xl-8">
+                <div className="col-xl-8 col-sm-12">
 
                 <Slide left>
 
@@ -37,7 +37,7 @@ function About() {
                 </div>
         <Slide bottom>
 
-                <div className="col-xl-2">
+                <div className="col-xl-2 col-sm-12">
                 <img src={bikesh}  />
                 </div>
         </Slide>

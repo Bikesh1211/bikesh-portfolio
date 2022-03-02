@@ -1,11 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
-import Bounce from 'react-reveal/Bounce';
 import Zoom from 'react-reveal/Zoom';
-import Slide from 'react-reveal/Slide';
-
-
-
 
 function Skills() {
     
@@ -19,7 +14,7 @@ function Skills() {
         </Zoom>
         <div className="row justify-content-center">
         <div className="row">
-            <div className="col col-xl-12">
+            <div className="col">
                 <Zoom>
                 <p>HTML, CSS, JavaScript, MongoDb, Express, Node, React, AWS, Flutter, PHP, Java, C#, Figma, Photoshop</p>
                 </Zoom>
@@ -41,53 +36,64 @@ function Skills() {
                     </ul>
             </div>
             </div>
-
             <Zoom>
-                <div className="col col-xl-3 col-md-3 col-sm-5">
-            <i className='fab fa-node'></i>
-                </div>
-                <div className="col col-xl-3 col-md-3 col-sm-5">
+            <div className="row">
 
-            <i className="fa-brands fa-envira"></i>
+            <div className="col">
+                <i className='fab fa-node'></i>
                 </div>
-                <div className="col col-xl-3 col-md-3 col-sm-5">
-
-            <i className="fa-brands fa-bootstrap"></i>
+                <div className="col">
+                <i class="fa-brands fa-php"></i>
                 </div>
-                <div className="col col-xl-3 col-md-3 col-sm-5">
-
-            <i className="fa-brands fa-html5"></i>
+                <div className="col">
+                <i className="fa-brands fa-envira"></i>
                 </div>
-                <div className="col col-xl-3 col-md-3 col-sm-5">
-
-            <i className="fa-brands fa-css3-alt"></i>
+                <div className="col">
+                <i className="fa-brands fa-bootstrap"></i>
+                </div>
+                <div className="col">
+                <i className="fa-brands fa-html5"></i>
                 </div>
 
-                <div className="col col-xl-3 col-md-3 col-sm-5">
+                <div className="row">
+                <div className="col">       
+                     <i className="fa-brands fa-css3-alt"></i>
+                    </div>
+                    <div className="col">
+                    <i className="fa-brands fa-git-square"></i>
+                    </div>
 
-            <i className="fa-brands fa-git-square"></i>
-                </div>
-                <div className="col col-xl-3 col-md-3 col-sm-5">
+                    <div className="col">
+                    <i className="fa-brands fa-react"></i>
+                    </div>
 
-            <i className="fa-brands fa-react"></i>
+                    <div className="col">
+                    <i className="fa-brands fa-js-square"></i>
+                    </div>
                 </div>
-            <div className="col col-xl-3 col-md-3 col-sm-5">
-            <i className="fa-brands fa-js-square"></i>
+                <div className="row">
+                    <div className="col">
+                    <i className="fa-brands fa-js-square"></i>
+                    </div>
+
+                    <div className="col">
+                    <i class="fa-brands fa-github"></i>
+                    </div>
+                    
+                    <div className="col">
+                    <i class="fa-brands fa-sass"></i>
+                    </div>
+
+                </div>
+                <div className="row">
+                <div className="col">
+                <i class="fa-brands fa-java"></i>
+                    </div>
+                </div>
+
 
             </div>
-            <div className="col col-xl-3 col-md-3 col-sm-5">
-            <i class="fa-brands fa-github"></i>
-            </div>
 
-            <div className="col col-xl-3 col-md-3 col-sm-5">
-            <i class="fa-brands fa-sass"></i>
-            </div>
-            <div className="col col-xl-3 col-md-3 col-sm-5">
-            <i class="fa-brands fa-java"></i>
-            </div>
-            <div className="col col-xl-3 col-md-3 col-sm-5">
-            <i class="fa-brands fa-php"></i>
-            </div>
             </Zoom>
         </div>
     </Container>
@@ -96,6 +102,7 @@ function Skills() {
 
 export default Skills
 const Container = styled.div`
+height: 700px;
 h1,h2{
     margin-bottom: 10px;
     margin-top: 10px;
