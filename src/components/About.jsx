@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components';
 import Slide from 'react-reveal/Slide';
 import Zoom from 'react-reveal/Zoom';
-import bikesh from './bikesh.jpg'
+import bikesh from'./img/Bikesh.jpg';
 
 
 function About() {
@@ -16,7 +16,7 @@ function About() {
                       <h1>About</h1>
                     <h2>Personal Information</h2>
                 </Zoom>
-                <Slide right>
+                <Slide left>
 
                 <ul className='col col-xl-8'>
                     <li>
@@ -31,7 +31,8 @@ function About() {
                     &nbsp;9810583110</li>
 
                 </ul>
-                <img src="{bikesh}" alt="bikesh Chaudhary" />
+
+                <img src={bikesh}  />
 
         </Slide>
             </Info>
@@ -44,6 +45,20 @@ function About() {
 export default About
 const Container = styled.div`
 text-align: center;
+margin-top: 150px;
+margin-bottom: 150px;
+
+            img{
+                width: 200px;
+                height: 200px;
+                object-fit: cover;
+                /* border-radius: 50%; */
+            }
+            
+h1,h2{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
 
             .resume-btn{
                 background-color: orange;

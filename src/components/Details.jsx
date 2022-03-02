@@ -1,20 +1,19 @@
 import React from 'react'
 import styled from 'styled-components';
+import Slide from 'react-reveal/Slide';
 import Zoom from 'react-reveal/Zoom';
-
-
 
 
 function Details() {
   return (
     <Container>
+<Slide left>
           <div className="details container">
         <Zoom>
           <h3>Hi, I am </h3>
           
 
         <h1>Bikesh Chaudhary</h1>
-        </Zoom>
 
         <h2 >Fullstack Developer | Mern Stack</h2>
 
@@ -23,14 +22,18 @@ function Details() {
         <p id='description'>Hard-working listing programmer with a flair for creating
       elegant solutions in the least amount of time. Looking to use
         my programming skills to help boost Pipe</p>
-
         <a href=""><i className="fa-brands fa-github"></i></a>
         <a href=""><i className="fa-brands fa-linkedin"></i></a> 
         <a href=""><i className="fa-brands fa-instagram"></i></a>
-
+          </Zoom>
           </div>
-          <button className="resume-btn">View Resume</button>
 
+          <Zoom>
+
+          <button className="resume-btn">View Resume</button>
+          </Zoom>
+
+</Slide>
     </Container>
   )
 }

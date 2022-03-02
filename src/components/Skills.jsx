@@ -1,6 +1,9 @@
 import React from 'react'
 import styled from 'styled-components';
 import Bounce from 'react-reveal/Bounce';
+import Zoom from 'react-reveal/Zoom';
+import Slide from 'react-reveal/Slide';
+
 
 
 
@@ -9,14 +12,17 @@ function Skills() {
   return (
     <Container className='container'>
 
+        <Zoom>
+
         <h1>Skills</h1>
-        <Bounce>
+                <h2>Technical Skills </h2>
+        </Zoom>
         <div className="row justify-content-center">
         <div className="row">
             <div className="col col-xl-12">
-                <h2>Technical Skills</h2>
+                <Zoom>
                 <p>HTML, CSS, JavaScript, MongoDb, Express, Node, React, AWS, Flutter, PHP, Java, C#, Figma, Photoshop</p>
-
+                </Zoom>
                     <ul>
                         <li>CSS</li>
                         <li>HTML</li>
@@ -31,13 +37,13 @@ function Skills() {
                         <li>Java</li>
                         <li>C#</li>
                         <li>.Net</li>
-                        <li>Figma</li>
                         <li>Photoshop</li>
                     </ul>
             </div>
             </div>
-                <div className="col col-xl-3 col-md-3 col-sm-5">
 
+            <Zoom>
+                <div className="col col-xl-3 col-md-3 col-sm-5">
             <i className='fab fa-node'></i>
                 </div>
                 <div className="col col-xl-3 col-md-3 col-sm-5">
@@ -76,15 +82,24 @@ function Skills() {
             <div className="col col-xl-3 col-md-3 col-sm-5">
             <i class="fa-brands fa-sass"></i>
             </div>
+            <div className="col col-xl-3 col-md-3 col-sm-5">
+            <i class="fa-brands fa-java"></i>
+            </div>
+            <div className="col col-xl-3 col-md-3 col-sm-5">
+            <i class="fa-brands fa-php"></i>
+            </div>
+            </Zoom>
         </div>
-        </Bounce>
-
     </Container>
   )
 }
 
 export default Skills
 const Container = styled.div`
+h1,h2{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
 h2{
     font-family: 'Kalam', cursive;
     color: #a6d303;

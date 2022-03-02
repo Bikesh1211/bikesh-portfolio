@@ -6,7 +6,7 @@ import Slide from 'react-reveal/Slide';
 function TopNav() {
   return (
     <Container>
-<Slide left>
+<Slide right>
         <Nav>
 
         <ul>
