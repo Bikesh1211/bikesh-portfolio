@@ -28,6 +28,7 @@ export default TopNav
 const Nav = styled.div`
 background-color: #24263A;
 border-radius: 10px;
+
 `
 const Container = styled.div`
 z-index: 1;

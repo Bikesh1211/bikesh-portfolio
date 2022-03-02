@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components';
 import Slide from 'react-reveal/Slide';
 import Zoom from 'react-reveal/Zoom';
-import bikesh from'./img/Bikesh.jpg';
+import bikesh from'./img/Bikesh1.jpg';
 
 
 function About() {
@@ -11,14 +11,16 @@ function About() {
 
 
 
-            <Info className='row'>
+            <Info className='row justify-content-center'>
                 <Zoom>
                       <h1>About</h1>
                     <h2>Personal Information</h2>
                 </Zoom>
+                <div className="col-xl-8">
+
                 <Slide left>
 
-                <ul className='col col-xl-8'>
+                <ul>
                     <li>
                     <i class="fa-solid fa-square-envelope"></i>
                     &nbsp; bikeshchaudharybikesh893@gmail.com</li>
@@ -31,10 +33,17 @@ function About() {
                     &nbsp;9810583110</li>
 
                 </ul>
-
-                <img src={bikesh}  />
-
         </Slide>
+                </div>
+        <Slide bottom>
+
+                <div className="col-xl-2">
+                <img src={bikesh}  />
+                </div>
+        </Slide>
+
+
+
             </Info>
 
 
@@ -45,16 +54,24 @@ function About() {
 export default About
 const Container = styled.div`
 text-align: center;
-margin-top: 150px;
-margin-bottom: 150px;
+margin-top: 100px;
+margin-bottom: 200px;
 
             img{
                 width: 200px;
                 height: 200px;
                 object-fit: cover;
-                /* border-radius: 50%; */
+                filter: grayscale(0);
+                border-radius: 20px;
+                background-color: #1D1E2C;
+                padding: 10px;
+                box-shadow: rgba(108, 127, 238, 0.25) 0px 25px 50px -12px;
+                box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
             }
-            
+            img:hover{
+                box-shadow: #3ff8b1 0px 3px 8px;
+            }
 h1,h2{
     margin-bottom: 10px;
     margin-top: 10px;
@@ -66,13 +83,13 @@ h1,h2{
                 border: none;
                 padding: 20px;
             }
-
 `
 const Info = styled.div`
 background-color: #24263A;
 background-image: linear-gradient(to bottom, #1D1E2C, #24263A);
 text-align: left;
-padding: 10px;
+/* padding: 10px; */
+padding-bottom: 30px;
 border-radius: 10px;
 font-size: 25px;
 
@@ -99,7 +116,7 @@ i{
 li{
     list-style: none;
     margin: 20px;
-    font-size: 2vw;
+    font-size: 20px;
     /* color: orange; */
 }
 @media (max-width: 700px) {
